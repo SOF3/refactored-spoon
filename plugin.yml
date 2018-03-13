@@ -1,4 +1,3 @@
-#Name of your plugin. This is self-explanatory. Plugin names SHOULD NOT contain spaces.
 name: refactored-spoon
 
 #Fully-qualified class-name of your plugin's main class. This is usually the one that extends PluginBase.
