@@ -1,6 +1,5 @@
 name: refactored-spoon
 
-#Since PocketMine-MP's autoloader is PSR-0, your plugin's main-class namespace will usually be the same as the folder path.
 main: Refactor\refactored_spoon\Main
 
 #Version name/number of your plugin
