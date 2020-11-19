@@ -2,9 +2,11 @@ name: octodiff test
 on: push
 jobs:
   main:
-    - uses: actions/checkout@v2
-    - run: tac README.md > READYOU.md
-    - run: git add .
-    - uses: SOF3/octodiff@v1
-      with:
-        token: ${{secrets.GH_TOKEN}}
+    runs-on: [ubuntu-20.04]
+    steps:
+      - uses: actions/checkout@v2
+      - run: tac README.md > READYOU.md
+      - run: git add .
+      - uses: SOF3/octodiff@v1
+        with:
+          token: ${{secrets.GH_TOKEN}}
